@@ -18,7 +18,7 @@
 
 $(document).ready(function(){
     $.getJSON("/templates/index.json", function(result){
-        $("#replaceMe").append("<table <tr> <th>Project Name</th> <th>Source</th> <th>Construction Cost</th></tr>");
+        $("#replaceMe").append("<table <tr> <th>Testing Project Name</th> <th>Source</th> <th>Construction Cost</th></tr>");
         $.each(result, function(i, field){
             $("#replaceMe").append("<tr><td>" + field.project_name + "</td><td>" + field.source + "</td><td>" + field.construction_cost + "</td></tr>");
         });
