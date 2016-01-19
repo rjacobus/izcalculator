@@ -1,7 +1,24 @@
 <h1>Templates#index</h1>
 <p>Find me in app/views/templates/index.html.erb</p>
+<p>here is another line of text</p>
 
+<h1>Listing articles</h1>
 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
 
+  <% @templates.each do |template| %>
+      <tr>
+        <td><%= template.project_name %></td>
+        <td><%= template.source %></td>
+      </tr>
+  <% end %>
+</table>
+<p></p>
+<p>Json below</p>
+<p></p>
 <Div id="replaceMe"></Div>
 
